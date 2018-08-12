@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <!-- Parent -->
@@ -16,7 +17,9 @@
 
     <!-- Info -->
     <name>${project.artifactId}</name>
-    <description>${massiveColorInfo}${project.name} is a plugin that contains libraries and features that other plugins make use of. ${massiveDescriptionSuffix}</description>
+    <description>${massiveColorInfo}${project.name} is a plugin that contains libraries and features that other plugins
+        make use of. ${massiveDescriptionSuffix}
+    </description>
     <url>${massiveBaseUrl}/massivecore</url>
 
     <!-- Dependencies -->
@@ -51,6 +54,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
             </plugin>
             <!-- Shade -->
             <plugin>
@@ -98,5 +105,5 @@
             </resource>
         </resources>
     </build>
-    
+
 </project>

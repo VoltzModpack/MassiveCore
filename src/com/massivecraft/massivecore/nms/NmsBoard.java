@@ -100,7 +100,8 @@ public class NmsBoard extends Mixin
 	
 	public boolean isEqualsImplemented()
 	{
-		throw notImplemented();
+		//		throw notImplemented();
+		return false;
 	}
 	
 	public Set<Team> createTeamSet()
