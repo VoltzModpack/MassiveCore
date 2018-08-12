@@ -1,6 +1,6 @@
 main: ${project.groupId}.${project.name}
 name: ${project.name}
-version: ${project.version}
+version: 2.14.0
 website: ${project.url}
 description: ${project.description}
 authors: [Cayorion]
